@@ -1,0 +1,19 @@
+# include<iostream>
+using namespace std;
+int main(){
+    int n;
+    int i=2;
+    cout<<"write the value here";
+    cin>> n;
+    while(i<=n){
+        if (n%i==0){
+            cout<<"the number is not prime "<<i<<endl;
+            
+        } 
+        else{
+            cout<<"the numbr is prime"<<i<<endl;
+        }
+        i=i+1;
+    }
+    return 0;
+}
