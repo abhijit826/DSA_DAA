@@ -1,0 +1,41 @@
+// C++ code to check if a char is uppercase, 
+// lowercase or not an alphabetic character
+#include <bits/stdc++.h>
+using namespace std;
+
+void check(char ch)
+{
+    if (isupper(ch))
+        cout << ch << " is an upperCase character\n";
+
+    else if (islower(ch))
+        cout << ch << " is a lowerCase character\n";
+
+    else
+        cout << ch << " is not an alphabetic character\n";
+}
+
+// Driver Code
+int main()
+{
+    char ch;
+    ch = 'A';
+
+    // Check the character
+    check(ch);
+
+    // Get the character
+    ch = 'a';
+
+    // Check the character
+    check(ch);
+
+    // Get the character
+    ch = '0';
+
+    // Check the character
+    check(ch);
+
+    return 0;
+    // This code is contributed by Shivesh Kumar Dwivedi
+}
