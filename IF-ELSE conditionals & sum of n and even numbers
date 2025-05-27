@@ -39,3 +39,27 @@ int main()
     return 0;
     // This code is contributed by Shivesh Kumar Dwivedi
 }
+
+
+
+
+
+// sum of n and even n numbers
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+ int sum =2;
+ // int sum=0; for nomral case or sum of first n numbers
+ int i =1;
+ int n;
+ cout<<"write the valuw of n \n";
+ cin>> n;
+ while(i<n){
+     sum=sum+i;
+     i =i+2;
+     // int i=i+1; for normal case; like  sum of first n numbers
+ }
+cout<<"the sum is" <<sum<<endl;
+    return 0;
+}
