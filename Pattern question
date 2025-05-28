@@ -306,3 +306,142 @@ A
 B C 
 C D E 
 D E F G 
+
+
+#10
+#include<iostream>
+
+using namespace std;
+int main(){
+int n;
+cout<<"enter the Value of N :";
+cin>> n;
+
+ int i=1;
+ while(i<=n){
+     int j=1;
+     char ch='A'+n-i;
+     while(j<=i){
+         
+         cout<<ch<<" ";
+         ch=ch+1;
+         j=j+1;
+     }
+     cout<<endl;
+     i=i+1;
+ }
+}
+
+OUTPUT:>>>>
+D 
+C D 
+B C D 
+A B C D 
+
+
+#11
+#include<iostream>
+
+using namespace std;
+int main(){
+int n;
+cout<<"enter the Value of N :";
+cin>> n;
+
+ int i=1;
+ while(i<=n){
+     int j=1;
+     char ch='A'+i-1;
+     while(j<=n){
+         
+         cout<<ch<<" ";
+         ch=ch+1;
+         j=j+1;
+     }
+     cout<<endl;
+     i=i+1;
+ }
+}
+
+OUTPUT:>>>
+A B C D 
+B C D E 
+C D E F 
+D E F G 
+
+
+
+>>>
+#include<iostream>
+
+using namespace std;
+int main(){
+int n;
+cout<<"enter the Value of N :";
+cin>> n;
+
+ int i=1;
+ while(i<=n){
+    // space print karne ka 
+    int space=n-i;
+ while(space){
+         cout<<" ";
+   space =space-1;
+   
+ }
+    // print stars;
+   int j=1;
+    while(j<=i){
+               cout<<"*";
+               j=j+1;
+    }
+     cout<<endl;
+     i=i+1;
+ }
+}
+
+
+OUTPUT:??
+enter the Value of N :4
+   *
+  **
+ ***
+****
+
+
+
+
+Question ??
+#include<iostream>
+
+using namespace std;
+int main(){
+int n;
+cout<<"enter the Value of N :";
+cin>> n;
+
+ int i=1;
+ while(i<=n){
+    // space print karne ka 
+    int space=n-i+1;
+ while(space){
+         cout<<"*";
+   space =space-1;
+   
+ }
+     cout<<endl;
+     i=i+1;
+ }
+}
+
+Output>>
+enter the Value of N :4
+****
+***
+**
+*
+
+
+
+
+
