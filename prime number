@@ -17,3 +17,93 @@ int main(){
     }
     return 0;
 }
+
+
+
+## FUNCTIONS
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+
+int power(){
+    int a,b;
+    cout<<"please enter your number";
+    cin>>a>>b;
+    int ans=1;
+    for(int i=1;i<=b;i++){
+        ans=ans*a;
+        
+    }
+
+    return ans;
+}
+    int main(){
+        int ans=power();
+        cout<<":the result is"<<ans<<endl;
+    }
+
+## ODD AND EVEN NUMBERS...
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+
+int isEven(int a){
+    
+    if(a&1){
+       //  int odd;
+        return 1;
+    }
+    else{
+       //  int even;
+        return 0;
+    }
+}
+    int main(){
+  int a;
+  cout<<"please enter your number"<<endl;
+  cin>>a;
+ if(isEven(a)){
+     cout<<"number is odd"<<endl;
+ }
+ else{
+     cout<<"it is even"<<endl;
+ }
+
+    }
+
+
+
+## FACTORIAL OF A NUMBER(ncr)
+
+#include <iostream>
+using namespace std;
+
+
+int factorial(int n){
+    int fact=1;
+    for(int i=1;i<=n;i++){
+        fact=fact*i;
+        
+    }
+    return fact;
+}
+
+
+int nCr(int n,int r){
+    int num=factorial(n);
+    int den=factorial(r)*factorial(n-r);
+    return num/den;
+}
+
+int main()
+{
+   int n, r;
+  cout<<"enter n and r"<<endl;
+   cin>>n>>r;
+   cout<<"the answer is"<<nCr(n, r)<<endl;
+    return 0;
+}
+
