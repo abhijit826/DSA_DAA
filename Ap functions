@@ -1,0 +1,91 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int Ap(int n){
+    int S=3*n+7;
+    return S;
+}
+
+int main(){
+int n;
+cin>>n;
+int ans=Ap(n);
+    cout<<"the answer is"<<ans;
+return 0;
+
+
+
+}
+
+
+## no of 1 digit present in binary number 
+
+#include <iostream>
+using namespace std;
+int group1(int n){
+    int count=0;
+    while(n!=0){
+    if( n&1){
+        count++;
+    }
+    
+    n=n>>1;
+   
+}
+ return count;
+}
+
+ 
+
+int group2(int m){
+    int count=0;
+    while(m){
+    if( m&1){
+        count++;
+    }
+    m=m>>1;
+   
+}
+ return count;
+}
+
+
+int main()
+{
+   int n,m;
+   cin>>n>>m;
+ int ans=group1(n);
+ int ans2=group2(m);
+ cout<<"the number of 1st bit1 digit "<<ans<<endl;
+ cout<<" the number of second bit 1 digit"<<ans2<<endl;
+ int sum=ans+ans2;
+ cout<<" total number of bits here"<<sum<<endl;
+
+    return 0;
+}
+
+
+# Fibanoonaci with functions
+
+#include<iostream>
+using namespace std;
+
+int fabinocci(int n){
+    int a=0;
+    int b=1;
+  for(int i=2;i<=n;i++){
+    int next=a+b;
+    a=b;
+    b=next;
+    
+}
+
+return a;
+}
+
+int main(){
+    int n;
+    cin>>n;
+    cout<<"so total i want is "<<fabinocci(n)<<endl;
+    return 0;
+}
