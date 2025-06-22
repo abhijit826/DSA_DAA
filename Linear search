@@ -32,3 +32,37 @@ int main() {
 
     return 0;
 }
+
+
+
+## swappping elements in array
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+void reverse(int arr[],int n){
+    int start=0;
+    int end=n-1;
+    
+   while(start<end){
+       swap(arr[start],arr[end]);
+       start++;
+       end--;
+   }
+        
+    }
+void printarr(int arr[],int n){
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<endl;
+        
+    }
+    cout<<endl;
+}
+
+int main() {
+ int arr[8]={5,98,24,9};
+ reverse(arr,4);
+ printarr(arr,4);
+    return 0;
+}
