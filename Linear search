@@ -66,3 +66,25 @@ int main() {
  printarr(arr,4);
     return 0;
 }
+
+
+## sum of array elements 
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int sum(int arr[],int n){
+    int sum=0;
+    for(int i=0;i<n;i++){
+        sum+=arr[i];
+        
+    }
+    return sum;
+}
+
+int main() {
+    // Write C++ code here
+    int arr[]={5,8,4,7,6};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    cout<<"the end is like"<<sum(arr,n);
+    return 0;
+}
