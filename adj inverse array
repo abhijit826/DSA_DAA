@@ -19,3 +19,35 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+// unique values print
+# include<iostream>
+using namespace std;
+ void  distance(int arr[],int n){
+     int i=0;
+     while(i<n){
+         int curr=arr[i];
+         
+   
+ int count =0;
+ // counting paramter;
+while(i<n && curr==arr[i] ){
+    count++;
+    i++;
+}
+ if(count=1){
+     cout<<curr;
+ }
+     }
+ }
+ int main(){
+     int arr[]={4,5,5,6,8,9,4,4};
+     int n=8;
+    distance(arr,n);
+    return 0;
+}
+ 
