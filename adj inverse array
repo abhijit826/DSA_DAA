@@ -70,3 +70,23 @@ cout<<"no duplicate found"<<endl;
     return 0;
 }
  
+## array intersection of two arrays
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+  
+  int arr1[]={4,54,55,7};
+  int arr2[]={5,4,55};
+  int n1=sizeof(arr1)/sizeof(arr1[0]);
+  int n2=sizeof(arr2)/sizeof(arr2[0]);
+  for(int i=0;i<n1;i++){
+      for(int j=1;j<n2;j++){
+          if(arr1[i]==arr2[j]){
+          cout<<arr2[j]<<endl;
+      }
+  }
+
+  }
+    return 0;
+}
